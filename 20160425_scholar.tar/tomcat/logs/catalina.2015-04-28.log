@@ -1,0 +1,16 @@
+Apr 28, 2015 2:09:27 AM org.apache.catalina.core.StandardWrapperValve invoke
+SEVERE: Servlet.service() for servlet [jsp] in context with path [] threw exception [java.lang.NullPointerException] with root cause
+java.lang.NullPointerException
+
+Apr 28, 2015 2:09:33 AM org.apache.catalina.core.StandardWrapperValve invoke
+SEVERE: Servlet.service() for servlet [jsp] in context with path [] threw exception [java.lang.NullPointerException] with root cause
+java.lang.NullPointerException
+
+Apr 28, 2015 2:10:19 AM org.apache.catalina.core.StandardWrapperValve invoke
+SEVERE: Servlet.service() for servlet [jsp] in context with path [] threw exception [java.lang.NullPointerException] with root cause
+java.lang.NullPointerException
+
+Apr 28, 2015 2:10:20 AM org.apache.catalina.core.StandardWrapperValve invoke
+SEVERE: Servlet.service() for servlet [jsp] in context with path [] threw exception [java.lang.NullPointerException] with root cause
+java.lang.NullPointerException
+

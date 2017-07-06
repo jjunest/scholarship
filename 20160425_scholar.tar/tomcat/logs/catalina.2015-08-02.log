@@ -1,0 +1,623 @@
+Aug 02, 2015 2:42:58 PM org.apache.catalina.core.StandardWrapperValve invoke
+SEVERE: Servlet.service() for servlet [jsp] in context with path [] threw exception [/manager_board/manager_mScholarship_endedList.jsp (line: 94, column: 2) File "mFooter.jsp" not found] with root cause
+org.apache.jasper.JasperException: /manager_board/manager_mScholarship_endedList.jsp (line: 94, column: 2) File "mFooter.jsp" not found
+	at org.apache.jasper.compiler.DefaultErrorHandler.jspError(DefaultErrorHandler.java:42)
+	at org.apache.jasper.compiler.ErrorDispatcher.dispatch(ErrorDispatcher.java:408)
+	at org.apache.jasper.compiler.ErrorDispatcher.jspError(ErrorDispatcher.java:133)
+	at org.apache.jasper.compiler.Parser.processIncludeDirective(Parser.java:322)
+	at org.apache.jasper.compiler.Parser.parseIncludeDirective(Parser.java:357)
+	at org.apache.jasper.compiler.Parser.parseDirective(Parser.java:467)
+	at org.apache.jasper.compiler.Parser.parseFileDirectives(Parser.java:1777)
+	at org.apache.jasper.compiler.Parser.parse(Parser.java:135)
+	at org.apache.jasper.compiler.ParserController.doParse(ParserController.java:242)
+	at org.apache.jasper.compiler.ParserController.parseDirectives(ParserController.java:119)
+	at org.apache.jasper.compiler.Compiler.generateJava(Compiler.java:193)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:373)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:353)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:340)
+	at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:646)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:357)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:390)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:334)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:722)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:305)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:224)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:169)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:472)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:168)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:98)
+	at org.apache.catalina.valves.AccessLogValve.invoke(AccessLogValve.java:928)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:118)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:407)
+	at org.apache.coyote.ajp.AjpProcessor.process(AjpProcessor.java:200)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:539)
+	at org.apache.tomcat.util.net.JIoEndpoint$SocketProcessor.run(JIoEndpoint.java:298)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1110)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:603)
+	at java.lang.Thread.run(Thread.java:722)
+
+Aug 02, 2015 2:44:07 PM org.apache.catalina.core.StandardWrapperValve invoke
+SEVERE: Servlet.service() for servlet [jsp] in context with path [] threw exception [Unable to compile class for JSP: 
+
+An error occurred at line: 26 in the jsp file: /manager_board/manager_mScholarship_endedList.jsp
+The method selectEndedInfo() is undefined for the type ScholarDAO
+23: <!-- -----------------Get ended ScholarList which are in Databases --------------------------- -->
+24: <%
+25: ScholarDAO sdao = ScholarDAO.getInstance();
+26: List<ScholarVO> endedList = sdao.selectEndedInfo();
+27: %><!-- ----------------- Get ended ScholarList which are in Databases ENDED---------------------- -->
+28: 
+29: 
+
+
+An error occurred at line: 56 in the jsp file: /manager_board/manager_mScholarship_endedList.jsp
+Cannot invoke matches(String) on the primitive type int
+53: String checkString = "[0-9][0-9][0-9][0-9].[0-9][0-9].[0-9][0-9]";
+54: String endday = "";
+55: 
+56: if(svo.getEndday().matches(checkString)){                  //if endday pattern matches like " 2015-08-15" ->  dday can be calculated
+57: 	System.out.println("end day matches our pattern : "+svo.getEndday());
+58: 
+59: 
+
+
+An error occurred at line: 60 in the jsp file: /manager_board/manager_mScholarship_endedList.jsp
+Cannot invoke substring(int, int) on the primitive type int
+57: 	System.out.println("end day matches our pattern : "+svo.getEndday());
+58: 
+59: 
+60: 	int endday_year = Integer.parseInt(svo.getEndday().substring(0,4)); // calculate DDAY ==================
+61: 	int endday_month = Integer.parseInt(svo.getEndday().substring(5,7));
+62: 	int endday_day = Integer.parseInt(svo.getEndday().substring(8,10));
+63: 	Calendar cal = Calendar.getInstance();
+
+
+An error occurred at line: 61 in the jsp file: /manager_board/manager_mScholarship_endedList.jsp
+Cannot invoke substring(int, int) on the primitive type int
+58: 
+59: 
+60: 	int endday_year = Integer.parseInt(svo.getEndday().substring(0,4)); // calculate DDAY ==================
+61: 	int endday_month = Integer.parseInt(svo.getEndday().substring(5,7));
+62: 	int endday_day = Integer.parseInt(svo.getEndday().substring(8,10));
+63: 	Calendar cal = Calendar.getInstance();
+64: 	long now_day = cal.getTimeInMillis();
+
+
+An error occurred at line: 62 in the jsp file: /manager_board/manager_mScholarship_endedList.jsp
+Cannot invoke substring(int, int) on the primitive type int
+59: 
+60: 	int endday_year = Integer.parseInt(svo.getEndday().substring(0,4)); // calculate DDAY ==================
+61: 	int endday_month = Integer.parseInt(svo.getEndday().substring(5,7));
+62: 	int endday_day = Integer.parseInt(svo.getEndday().substring(8,10));
+63: 	Calendar cal = Calendar.getInstance();
+64: 	long now_day = cal.getTimeInMillis();
+65: 	cal.set(endday_year, endday_month-1, endday_day);
+
+
+Stacktrace:] with root cause
+org.apache.jasper.JasperException: Unable to compile class for JSP: 
+
+An error occurred at line: 26 in the jsp file: /manager_board/manager_mScholarship_endedList.jsp
+The method selectEndedInfo() is undefined for the type ScholarDAO
+23: <!-- -----------------Get ended ScholarList which are in Databases --------------------------- -->
+24: <%
+25: ScholarDAO sdao = ScholarDAO.getInstance();
+26: List<ScholarVO> endedList = sdao.selectEndedInfo();
+27: %><!-- ----------------- Get ended ScholarList which are in Databases ENDED---------------------- -->
+28: 
+29: 
+
+
+An error occurred at line: 56 in the jsp file: /manager_board/manager_mScholarship_endedList.jsp
+Cannot invoke matches(String) on the primitive type int
+53: String checkString = "[0-9][0-9][0-9][0-9].[0-9][0-9].[0-9][0-9]";
+54: String endday = "";
+55: 
+56: if(svo.getEndday().matches(checkString)){                  //if endday pattern matches like " 2015-08-15" ->  dday can be calculated
+57: 	System.out.println("end day matches our pattern : "+svo.getEndday());
+58: 
+59: 
+
+
+An error occurred at line: 60 in the jsp file: /manager_board/manager_mScholarship_endedList.jsp
+Cannot invoke substring(int, int) on the primitive type int
+57: 	System.out.println("end day matches our pattern : "+svo.getEndday());
+58: 
+59: 
+60: 	int endday_year = Integer.parseInt(svo.getEndday().substring(0,4)); // calculate DDAY ==================
+61: 	int endday_month = Integer.parseInt(svo.getEndday().substring(5,7));
+62: 	int endday_day = Integer.parseInt(svo.getEndday().substring(8,10));
+63: 	Calendar cal = Calendar.getInstance();
+
+
+An error occurred at line: 61 in the jsp file: /manager_board/manager_mScholarship_endedList.jsp
+Cannot invoke substring(int, int) on the primitive type int
+58: 
+59: 
+60: 	int endday_year = Integer.parseInt(svo.getEndday().substring(0,4)); // calculate DDAY ==================
+61: 	int endday_month = Integer.parseInt(svo.getEndday().substring(5,7));
+62: 	int endday_day = Integer.parseInt(svo.getEndday().substring(8,10));
+63: 	Calendar cal = Calendar.getInstance();
+64: 	long now_day = cal.getTimeInMillis();
+
+
+An error occurred at line: 62 in the jsp file: /manager_board/manager_mScholarship_endedList.jsp
+Cannot invoke substring(int, int) on the primitive type int
+59: 
+60: 	int endday_year = Integer.parseInt(svo.getEndday().substring(0,4)); // calculate DDAY ==================
+61: 	int endday_month = Integer.parseInt(svo.getEndday().substring(5,7));
+62: 	int endday_day = Integer.parseInt(svo.getEndday().substring(8,10));
+63: 	Calendar cal = Calendar.getInstance();
+64: 	long now_day = cal.getTimeInMillis();
+65: 	cal.set(endday_year, endday_month-1, endday_day);
+
+
+Stacktrace:
+	at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:102)
+	at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:331)
+	at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:457)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:378)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:353)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:340)
+	at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:646)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:357)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:390)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:334)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:722)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:305)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:224)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:169)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:472)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:168)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:98)
+	at org.apache.catalina.valves.AccessLogValve.invoke(AccessLogValve.java:928)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:118)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:407)
+	at org.apache.coyote.ajp.AjpProcessor.process(AjpProcessor.java:200)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:539)
+	at org.apache.tomcat.util.net.JIoEndpoint$SocketProcessor.run(JIoEndpoint.java:298)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1110)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:603)
+	at java.lang.Thread.run(Thread.java:722)
+
+Aug 02, 2015 2:44:51 PM org.apache.catalina.core.StandardWrapperValve invoke
+SEVERE: Servlet.service() for servlet [jsp] in context with path [] threw exception [Unable to compile class for JSP: 
+
+An error occurred at line: 26 in the jsp file: /manager_board/manager_mScholarship_endedList.jsp
+The method selectEndedInfo() is undefined for the type ScholarDAO
+23: <!-- -----------------Get ended ScholarList which are in Databases --------------------------- -->
+24: <%
+25: ScholarDAO sdao = ScholarDAO.getInstance();
+26: List<ScholarVO> endedList = sdao.selectEndedInfo();
+27: %><!-- ----------------- Get ended ScholarList which are in Databases ENDED---------------------- -->
+28: 
+29: 
+
+
+An error occurred at line: 56 in the jsp file: /manager_board/manager_mScholarship_endedList.jsp
+Cannot invoke matches(String) on the primitive type int
+53: String checkString = "[0-9][0-9][0-9][0-9].[0-9][0-9].[0-9][0-9]";
+54: String endday = "";
+55: 
+56: if(svo.getEndday().matches(checkString)){                  //if endday pattern matches like " 2015-08-15" ->  dday can be calculated
+57: 	System.out.println("end day matches our pattern : "+svo.getEndday());
+58: 
+59: 
+
+
+An error occurred at line: 60 in the jsp file: /manager_board/manager_mScholarship_endedList.jsp
+Cannot invoke substring(int, int) on the primitive type int
+57: 	System.out.println("end day matches our pattern : "+svo.getEndday());
+58: 
+59: 
+60: 	int endday_year = Integer.parseInt(svo.getEndday().substring(0,4)); // calculate DDAY ==================
+61: 	int endday_month = Integer.parseInt(svo.getEndday().substring(5,7));
+62: 	int endday_day = Integer.parseInt(svo.getEndday().substring(8,10));
+63: 	Calendar cal = Calendar.getInstance();
+
+
+An error occurred at line: 61 in the jsp file: /manager_board/manager_mScholarship_endedList.jsp
+Cannot invoke substring(int, int) on the primitive type int
+58: 
+59: 
+60: 	int endday_year = Integer.parseInt(svo.getEndday().substring(0,4)); // calculate DDAY ==================
+61: 	int endday_month = Integer.parseInt(svo.getEndday().substring(5,7));
+62: 	int endday_day = Integer.parseInt(svo.getEndday().substring(8,10));
+63: 	Calendar cal = Calendar.getInstance();
+64: 	long now_day = cal.getTimeInMillis();
+
+
+An error occurred at line: 62 in the jsp file: /manager_board/manager_mScholarship_endedList.jsp
+Cannot invoke substring(int, int) on the primitive type int
+59: 
+60: 	int endday_year = Integer.parseInt(svo.getEndday().substring(0,4)); // calculate DDAY ==================
+61: 	int endday_month = Integer.parseInt(svo.getEndday().substring(5,7));
+62: 	int endday_day = Integer.parseInt(svo.getEndday().substring(8,10));
+63: 	Calendar cal = Calendar.getInstance();
+64: 	long now_day = cal.getTimeInMillis();
+65: 	cal.set(endday_year, endday_month-1, endday_day);
+
+
+Stacktrace:] with root cause
+org.apache.jasper.JasperException: Unable to compile class for JSP: 
+
+An error occurred at line: 26 in the jsp file: /manager_board/manager_mScholarship_endedList.jsp
+The method selectEndedInfo() is undefined for the type ScholarDAO
+23: <!-- -----------------Get ended ScholarList which are in Databases --------------------------- -->
+24: <%
+25: ScholarDAO sdao = ScholarDAO.getInstance();
+26: List<ScholarVO> endedList = sdao.selectEndedInfo();
+27: %><!-- ----------------- Get ended ScholarList which are in Databases ENDED---------------------- -->
+28: 
+29: 
+
+
+An error occurred at line: 56 in the jsp file: /manager_board/manager_mScholarship_endedList.jsp
+Cannot invoke matches(String) on the primitive type int
+53: String checkString = "[0-9][0-9][0-9][0-9].[0-9][0-9].[0-9][0-9]";
+54: String endday = "";
+55: 
+56: if(svo.getEndday().matches(checkString)){                  //if endday pattern matches like " 2015-08-15" ->  dday can be calculated
+57: 	System.out.println("end day matches our pattern : "+svo.getEndday());
+58: 
+59: 
+
+
+An error occurred at line: 60 in the jsp file: /manager_board/manager_mScholarship_endedList.jsp
+Cannot invoke substring(int, int) on the primitive type int
+57: 	System.out.println("end day matches our pattern : "+svo.getEndday());
+58: 
+59: 
+60: 	int endday_year = Integer.parseInt(svo.getEndday().substring(0,4)); // calculate DDAY ==================
+61: 	int endday_month = Integer.parseInt(svo.getEndday().substring(5,7));
+62: 	int endday_day = Integer.parseInt(svo.getEndday().substring(8,10));
+63: 	Calendar cal = Calendar.getInstance();
+
+
+An error occurred at line: 61 in the jsp file: /manager_board/manager_mScholarship_endedList.jsp
+Cannot invoke substring(int, int) on the primitive type int
+58: 
+59: 
+60: 	int endday_year = Integer.parseInt(svo.getEndday().substring(0,4)); // calculate DDAY ==================
+61: 	int endday_month = Integer.parseInt(svo.getEndday().substring(5,7));
+62: 	int endday_day = Integer.parseInt(svo.getEndday().substring(8,10));
+63: 	Calendar cal = Calendar.getInstance();
+64: 	long now_day = cal.getTimeInMillis();
+
+
+An error occurred at line: 62 in the jsp file: /manager_board/manager_mScholarship_endedList.jsp
+Cannot invoke substring(int, int) on the primitive type int
+59: 
+60: 	int endday_year = Integer.parseInt(svo.getEndday().substring(0,4)); // calculate DDAY ==================
+61: 	int endday_month = Integer.parseInt(svo.getEndday().substring(5,7));
+62: 	int endday_day = Integer.parseInt(svo.getEndday().substring(8,10));
+63: 	Calendar cal = Calendar.getInstance();
+64: 	long now_day = cal.getTimeInMillis();
+65: 	cal.set(endday_year, endday_month-1, endday_day);
+
+
+Stacktrace:
+	at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:102)
+	at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:331)
+	at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:457)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:378)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:353)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:340)
+	at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:646)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:357)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:390)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:334)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:722)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:305)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:224)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:169)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:472)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:168)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:98)
+	at org.apache.catalina.valves.AccessLogValve.invoke(AccessLogValve.java:928)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:118)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:407)
+	at org.apache.coyote.ajp.AjpProcessor.process(AjpProcessor.java:200)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:539)
+	at org.apache.tomcat.util.net.JIoEndpoint$SocketProcessor.run(JIoEndpoint.java:298)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1110)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:603)
+	at java.lang.Thread.run(Thread.java:722)
+
+Aug 02, 2015 2:48:13 PM org.apache.catalina.core.StandardWrapperValve invoke
+SEVERE: Servlet.service() for servlet [jsp] in context with path [] threw exception [Unable to compile class for JSP: 
+
+An error occurred at line: 26 in the jsp file: /manager_board/manager_mScholarship_endedList.jsp
+The method selectEndedInfo() is undefined for the type ScholarDAO
+23: <!-- -----------------Get ended ScholarList which are in Databases --------------------------- -->
+24: <%
+25: ScholarDAO sdao = ScholarDAO.getInstance();
+26: List<ScholarVO> endedList = sdao.selectEndedInfo();
+27: %><!-- ----------------- Get ended ScholarList which are in Databases ENDED---------------------- -->
+28: 
+29: 
+
+
+An error occurred at line: 56 in the jsp file: /manager_board/manager_mScholarship_endedList.jsp
+Cannot invoke matches(String) on the primitive type int
+53: String checkString = "[0-9][0-9][0-9][0-9].[0-9][0-9].[0-9][0-9]";
+54: String endday = "";
+55: 
+56: if(svo.getEndday().matches(checkString)){                  //if endday pattern matches like " 2015-08-15" ->  dday can be calculated
+57: 	System.out.println("end day matches our pattern : "+svo.getEndday());
+58: 
+59: 
+
+
+An error occurred at line: 60 in the jsp file: /manager_board/manager_mScholarship_endedList.jsp
+Cannot invoke substring(int, int) on the primitive type int
+57: 	System.out.println("end day matches our pattern : "+svo.getEndday());
+58: 
+59: 
+60: 	int endday_year = Integer.parseInt(svo.getEndday().substring(0,4)); // calculate DDAY ==================
+61: 	int endday_month = Integer.parseInt(svo.getEndday().substring(5,7));
+62: 	int endday_day = Integer.parseInt(svo.getEndday().substring(8,10));
+63: 	Calendar cal = Calendar.getInstance();
+
+
+An error occurred at line: 61 in the jsp file: /manager_board/manager_mScholarship_endedList.jsp
+Cannot invoke substring(int, int) on the primitive type int
+58: 
+59: 
+60: 	int endday_year = Integer.parseInt(svo.getEndday().substring(0,4)); // calculate DDAY ==================
+61: 	int endday_month = Integer.parseInt(svo.getEndday().substring(5,7));
+62: 	int endday_day = Integer.parseInt(svo.getEndday().substring(8,10));
+63: 	Calendar cal = Calendar.getInstance();
+64: 	long now_day = cal.getTimeInMillis();
+
+
+An error occurred at line: 62 in the jsp file: /manager_board/manager_mScholarship_endedList.jsp
+Cannot invoke substring(int, int) on the primitive type int
+59: 
+60: 	int endday_year = Integer.parseInt(svo.getEndday().substring(0,4)); // calculate DDAY ==================
+61: 	int endday_month = Integer.parseInt(svo.getEndday().substring(5,7));
+62: 	int endday_day = Integer.parseInt(svo.getEndday().substring(8,10));
+63: 	Calendar cal = Calendar.getInstance();
+64: 	long now_day = cal.getTimeInMillis();
+65: 	cal.set(endday_year, endday_month-1, endday_day);
+
+
+Stacktrace:] with root cause
+org.apache.jasper.JasperException: Unable to compile class for JSP: 
+
+An error occurred at line: 26 in the jsp file: /manager_board/manager_mScholarship_endedList.jsp
+The method selectEndedInfo() is undefined for the type ScholarDAO
+23: <!-- -----------------Get ended ScholarList which are in Databases --------------------------- -->
+24: <%
+25: ScholarDAO sdao = ScholarDAO.getInstance();
+26: List<ScholarVO> endedList = sdao.selectEndedInfo();
+27: %><!-- ----------------- Get ended ScholarList which are in Databases ENDED---------------------- -->
+28: 
+29: 
+
+
+An error occurred at line: 56 in the jsp file: /manager_board/manager_mScholarship_endedList.jsp
+Cannot invoke matches(String) on the primitive type int
+53: String checkString = "[0-9][0-9][0-9][0-9].[0-9][0-9].[0-9][0-9]";
+54: String endday = "";
+55: 
+56: if(svo.getEndday().matches(checkString)){                  //if endday pattern matches like " 2015-08-15" ->  dday can be calculated
+57: 	System.out.println("end day matches our pattern : "+svo.getEndday());
+58: 
+59: 
+
+
+An error occurred at line: 60 in the jsp file: /manager_board/manager_mScholarship_endedList.jsp
+Cannot invoke substring(int, int) on the primitive type int
+57: 	System.out.println("end day matches our pattern : "+svo.getEndday());
+58: 
+59: 
+60: 	int endday_year = Integer.parseInt(svo.getEndday().substring(0,4)); // calculate DDAY ==================
+61: 	int endday_month = Integer.parseInt(svo.getEndday().substring(5,7));
+62: 	int endday_day = Integer.parseInt(svo.getEndday().substring(8,10));
+63: 	Calendar cal = Calendar.getInstance();
+
+
+An error occurred at line: 61 in the jsp file: /manager_board/manager_mScholarship_endedList.jsp
+Cannot invoke substring(int, int) on the primitive type int
+58: 
+59: 
+60: 	int endday_year = Integer.parseInt(svo.getEndday().substring(0,4)); // calculate DDAY ==================
+61: 	int endday_month = Integer.parseInt(svo.getEndday().substring(5,7));
+62: 	int endday_day = Integer.parseInt(svo.getEndday().substring(8,10));
+63: 	Calendar cal = Calendar.getInstance();
+64: 	long now_day = cal.getTimeInMillis();
+
+
+An error occurred at line: 62 in the jsp file: /manager_board/manager_mScholarship_endedList.jsp
+Cannot invoke substring(int, int) on the primitive type int
+59: 
+60: 	int endday_year = Integer.parseInt(svo.getEndday().substring(0,4)); // calculate DDAY ==================
+61: 	int endday_month = Integer.parseInt(svo.getEndday().substring(5,7));
+62: 	int endday_day = Integer.parseInt(svo.getEndday().substring(8,10));
+63: 	Calendar cal = Calendar.getInstance();
+64: 	long now_day = cal.getTimeInMillis();
+65: 	cal.set(endday_year, endday_month-1, endday_day);
+
+
+Stacktrace:
+	at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:102)
+	at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:331)
+	at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:457)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:378)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:353)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:340)
+	at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:646)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:357)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:390)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:334)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:722)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:305)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:224)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:169)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:472)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:168)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:98)
+	at org.apache.catalina.valves.AccessLogValve.invoke(AccessLogValve.java:928)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:118)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:407)
+	at org.apache.coyote.ajp.AjpProcessor.process(AjpProcessor.java:200)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:539)
+	at org.apache.tomcat.util.net.JIoEndpoint$SocketProcessor.run(JIoEndpoint.java:298)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1110)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:603)
+	at java.lang.Thread.run(Thread.java:722)
+
+Aug 02, 2015 2:48:34 PM org.apache.catalina.core.StandardWrapperValve invoke
+SEVERE: Servlet.service() for servlet [jsp] in context with path [] threw exception [Unable to compile class for JSP: 
+
+An error occurred at line: 26 in the jsp file: /manager_board/manager_mScholarship_endedList.jsp
+The method selectEndedInfo() is undefined for the type ScholarDAO
+23: <!-- -----------------Get ended ScholarList which are in Databases --------------------------- -->
+24: <%
+25: ScholarDAO sdao = ScholarDAO.getInstance();
+26: List<ScholarVO> endedList = sdao.selectEndedInfo();
+27: %><!-- ----------------- Get ended ScholarList which are in Databases ENDED---------------------- -->
+28: 
+29: 
+
+
+An error occurred at line: 56 in the jsp file: /manager_board/manager_mScholarship_endedList.jsp
+Cannot invoke matches(String) on the primitive type int
+53: String checkString = "[0-9][0-9][0-9][0-9].[0-9][0-9].[0-9][0-9]";
+54: String endday = "";
+55: 
+56: if(svo.getEndday().matches(checkString)){                  //if endday pattern matches like " 2015-08-15" ->  dday can be calculated
+57: 	System.out.println("end day matches our pattern : "+svo.getEndday());
+58: 
+59: 
+
+
+An error occurred at line: 60 in the jsp file: /manager_board/manager_mScholarship_endedList.jsp
+Cannot invoke substring(int, int) on the primitive type int
+57: 	System.out.println("end day matches our pattern : "+svo.getEndday());
+58: 
+59: 
+60: 	int endday_year = Integer.parseInt(svo.getEndday().substring(0,4)); // calculate DDAY ==================
+61: 	int endday_month = Integer.parseInt(svo.getEndday().substring(5,7));
+62: 	int endday_day = Integer.parseInt(svo.getEndday().substring(8,10));
+63: 	Calendar cal = Calendar.getInstance();
+
+
+An error occurred at line: 61 in the jsp file: /manager_board/manager_mScholarship_endedList.jsp
+Cannot invoke substring(int, int) on the primitive type int
+58: 
+59: 
+60: 	int endday_year = Integer.parseInt(svo.getEndday().substring(0,4)); // calculate DDAY ==================
+61: 	int endday_month = Integer.parseInt(svo.getEndday().substring(5,7));
+62: 	int endday_day = Integer.parseInt(svo.getEndday().substring(8,10));
+63: 	Calendar cal = Calendar.getInstance();
+64: 	long now_day = cal.getTimeInMillis();
+
+
+An error occurred at line: 62 in the jsp file: /manager_board/manager_mScholarship_endedList.jsp
+Cannot invoke substring(int, int) on the primitive type int
+59: 
+60: 	int endday_year = Integer.parseInt(svo.getEndday().substring(0,4)); // calculate DDAY ==================
+61: 	int endday_month = Integer.parseInt(svo.getEndday().substring(5,7));
+62: 	int endday_day = Integer.parseInt(svo.getEndday().substring(8,10));
+63: 	Calendar cal = Calendar.getInstance();
+64: 	long now_day = cal.getTimeInMillis();
+65: 	cal.set(endday_year, endday_month-1, endday_day);
+
+
+Stacktrace:] with root cause
+org.apache.jasper.JasperException: Unable to compile class for JSP: 
+
+An error occurred at line: 26 in the jsp file: /manager_board/manager_mScholarship_endedList.jsp
+The method selectEndedInfo() is undefined for the type ScholarDAO
+23: <!-- -----------------Get ended ScholarList which are in Databases --------------------------- -->
+24: <%
+25: ScholarDAO sdao = ScholarDAO.getInstance();
+26: List<ScholarVO> endedList = sdao.selectEndedInfo();
+27: %><!-- ----------------- Get ended ScholarList which are in Databases ENDED---------------------- -->
+28: 
+29: 
+
+
+An error occurred at line: 56 in the jsp file: /manager_board/manager_mScholarship_endedList.jsp
+Cannot invoke matches(String) on the primitive type int
+53: String checkString = "[0-9][0-9][0-9][0-9].[0-9][0-9].[0-9][0-9]";
+54: String endday = "";
+55: 
+56: if(svo.getEndday().matches(checkString)){                  //if endday pattern matches like " 2015-08-15" ->  dday can be calculated
+57: 	System.out.println("end day matches our pattern : "+svo.getEndday());
+58: 
+59: 
+
+
+An error occurred at line: 60 in the jsp file: /manager_board/manager_mScholarship_endedList.jsp
+Cannot invoke substring(int, int) on the primitive type int
+57: 	System.out.println("end day matches our pattern : "+svo.getEndday());
+58: 
+59: 
+60: 	int endday_year = Integer.parseInt(svo.getEndday().substring(0,4)); // calculate DDAY ==================
+61: 	int endday_month = Integer.parseInt(svo.getEndday().substring(5,7));
+62: 	int endday_day = Integer.parseInt(svo.getEndday().substring(8,10));
+63: 	Calendar cal = Calendar.getInstance();
+
+
+An error occurred at line: 61 in the jsp file: /manager_board/manager_mScholarship_endedList.jsp
+Cannot invoke substring(int, int) on the primitive type int
+58: 
+59: 
+60: 	int endday_year = Integer.parseInt(svo.getEndday().substring(0,4)); // calculate DDAY ==================
+61: 	int endday_month = Integer.parseInt(svo.getEndday().substring(5,7));
+62: 	int endday_day = Integer.parseInt(svo.getEndday().substring(8,10));
+63: 	Calendar cal = Calendar.getInstance();
+64: 	long now_day = cal.getTimeInMillis();
+
+
+An error occurred at line: 62 in the jsp file: /manager_board/manager_mScholarship_endedList.jsp
+Cannot invoke substring(int, int) on the primitive type int
+59: 
+60: 	int endday_year = Integer.parseInt(svo.getEndday().substring(0,4)); // calculate DDAY ==================
+61: 	int endday_month = Integer.parseInt(svo.getEndday().substring(5,7));
+62: 	int endday_day = Integer.parseInt(svo.getEndday().substring(8,10));
+63: 	Calendar cal = Calendar.getInstance();
+64: 	long now_day = cal.getTimeInMillis();
+65: 	cal.set(endday_year, endday_month-1, endday_day);
+
+
+Stacktrace:
+	at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:102)
+	at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:331)
+	at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:457)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:378)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:353)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:340)
+	at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:646)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:357)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:390)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:334)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:722)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:305)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:224)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:169)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:472)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:168)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:98)
+	at org.apache.catalina.valves.AccessLogValve.invoke(AccessLogValve.java:928)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:118)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:407)
+	at org.apache.coyote.ajp.AjpProcessor.process(AjpProcessor.java:200)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:539)
+	at org.apache.tomcat.util.net.JIoEndpoint$SocketProcessor.run(JIoEndpoint.java:298)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1110)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:603)
+	at java.lang.Thread.run(Thread.java:722)
+
+Aug 02, 2015 2:53:30 PM org.apache.catalina.core.StandardContext reload
+INFO: Reloading Context with name [] has started
+Aug 02, 2015 2:53:31 PM org.apache.catalina.core.StandardContext reload
+INFO: Reloading Context with name [] is completed

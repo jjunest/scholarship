@@ -1,0 +1,271 @@
+Jul 22, 2015 9:06:18 AM org.apache.catalina.core.StandardWrapperValve invoke
+SEVERE: Servlet.service() for servlet [jsp] in context with path [] threw exception [java.lang.NullPointerException] with root cause
+java.lang.NullPointerException
+
+Jul 22, 2015 9:06:19 AM org.apache.catalina.core.StandardWrapperValve invoke
+SEVERE: Servlet.service() for servlet [jsp] in context with path [] threw exception [java.lang.NullPointerException] with root cause
+java.lang.NullPointerException
+
+Jul 22, 2015 9:06:20 AM org.apache.catalina.core.StandardWrapperValve invoke
+SEVERE: Servlet.service() for servlet [jsp] in context with path [] threw exception [java.lang.NullPointerException] with root cause
+java.lang.NullPointerException
+
+Jul 22, 2015 9:06:24 AM org.apache.catalina.core.StandardWrapperValve invoke
+SEVERE: Servlet.service() for servlet [jsp] in context with path [] threw exception [java.lang.NullPointerException] with root cause
+java.lang.NullPointerException
+
+Jul 22, 2015 2:30:28 PM org.apache.catalina.core.StandardServer await
+INFO: A valid shutdown command was received via the shutdown port. Stopping the Server instance.
+Jul 22, 2015 2:30:28 PM org.apache.coyote.AbstractProtocol pause
+INFO: Pausing ProtocolHandler ["ajp-bio-8863"]
+Jul 22, 2015 2:30:28 PM org.apache.catalina.core.StandardService stopInternal
+INFO: Stopping service Catalina
+Jul 22, 2015 2:30:29 PM org.apache.catalina.core.ApplicationContext log
+INFO: SessionListener: contextDestroyed()
+Jul 22, 2015 2:30:29 PM org.apache.catalina.core.ApplicationContext log
+INFO: ContextListener: contextDestroyed()
+Jul 22, 2015 2:30:29 PM org.apache.coyote.AbstractProtocol stop
+INFO: Stopping ProtocolHandler ["ajp-bio-8863"]
+Jul 22, 2015 2:30:29 PM org.apache.coyote.AbstractProtocol destroy
+INFO: Destroying ProtocolHandler ["ajp-bio-8863"]
+Jul 22, 2015 2:30:32 PM org.apache.catalina.core.AprLifecycleListener init
+INFO: The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: /usr/java/packages/lib/amd64:/usr/lib64:/lib64:/lib:/usr/lib
+Jul 22, 2015 2:30:32 PM org.apache.tomcat.util.digester.SetPropertiesRule begin
+WARNING: [SetPropertiesRule]{Server/Service/Engine/Host} Setting property 'xmlValidation' to 'false' did not find a matching property.
+Jul 22, 2015 2:30:32 PM org.apache.tomcat.util.digester.SetPropertiesRule begin
+WARNING: [SetPropertiesRule]{Server/Service/Engine/Host} Setting property 'xmlNamespaceAware' to 'false' did not find a matching property.
+Jul 22, 2015 2:30:32 PM org.apache.tomcat.util.digester.SetPropertiesRule begin
+WARNING: [SetPropertiesRule]{Server/Service/Engine/Host/Context} Setting property 'debug' to '0' did not find a matching property.
+Jul 22, 2015 2:30:33 PM org.apache.coyote.AbstractProtocol init
+INFO: Initializing ProtocolHandler ["ajp-bio-8863"]
+Jul 22, 2015 2:30:33 PM org.apache.catalina.startup.Catalina load
+INFO: Initialization processed in 904 ms
+Jul 22, 2015 2:30:33 PM org.apache.catalina.core.StandardService startInternal
+INFO: Starting service Catalina
+Jul 22, 2015 2:30:33 PM org.apache.catalina.core.StandardEngine startInternal
+INFO: Starting Servlet Engine: Apache Tomcat/7.0.23
+Jul 22, 2015 2:30:33 PM org.apache.catalina.core.StandardContext resourcesStart
+SEVERE: Error starting static Resources
+java.lang.IllegalArgumentException: Document base /www/scholarshipcenter/www/WebContent does not exist or is not a readable directory
+	at org.apache.naming.resources.FileDirContext.setDocBase(FileDirContext.java:140)
+	at org.apache.catalina.core.StandardContext.resourcesStart(StandardContext.java:4880)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5060)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1525)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1515)
+	at java.util.concurrent.FutureTask$Sync.innerRun(FutureTask.java:334)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:166)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1110)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:603)
+	at java.lang.Thread.run(Thread.java:722)
+
+Jul 22, 2015 2:30:33 PM org.apache.catalina.core.StandardContext startInternal
+SEVERE: Error in resourceStart()
+Jul 22, 2015 2:30:33 PM org.apache.catalina.core.StandardContext startInternal
+SEVERE: Error getConfigured
+Jul 22, 2015 2:30:33 PM org.apache.catalina.core.StandardContext startInternal
+SEVERE: Context [] startup failed due to previous errors
+Jul 22, 2015 2:30:33 PM org.apache.catalina.startup.HostConfig start
+SEVERE: Unable to create directory for deployment: /www/scholarshipcenter
+Jul 22, 2015 2:30:33 PM org.apache.catalina.startup.HostConfig start
+SEVERE: Application base [/www/scholarshipcenter] for host [scholarshipcenter.co.kr] does not exist or is not a directory. deployOnStartUp and autoDeploy have been set to false to prevent deployment errors. Other errors may still occur.
+Jul 22, 2015 2:30:33 PM org.apache.coyote.AbstractProtocol start
+INFO: Starting ProtocolHandler ["ajp-bio-8863"]
+Jul 22, 2015 2:30:33 PM org.apache.catalina.connector.MapperListener findDefaultHost
+WARNING: Unknown default host [localhost] for connector [Connector[AJP/1.3-8863]]
+Jul 22, 2015 2:30:33 PM org.apache.catalina.startup.Catalina start
+INFO: Server startup in 179 ms
+Jul 22, 2015 2:31:15 PM org.apache.catalina.core.StandardServer await
+INFO: A valid shutdown command was received via the shutdown port. Stopping the Server instance.
+Jul 22, 2015 2:31:15 PM org.apache.coyote.AbstractProtocol pause
+INFO: Pausing ProtocolHandler ["ajp-bio-8863"]
+Jul 22, 2015 2:31:15 PM org.apache.catalina.core.StandardService stopInternal
+INFO: Stopping service Catalina
+Jul 22, 2015 2:31:15 PM org.apache.catalina.util.LifecycleBase stop
+INFO: The stop() method was called on component [StandardEngine[Catalina].StandardHost[scholarshipcenter.co.kr].StandardContext[]] after stop() had already been called. The second call will be ignored.
+Jul 22, 2015 2:31:15 PM org.apache.coyote.AbstractProtocol stop
+INFO: Stopping ProtocolHandler ["ajp-bio-8863"]
+Jul 22, 2015 2:31:15 PM org.apache.coyote.AbstractProtocol destroy
+INFO: Destroying ProtocolHandler ["ajp-bio-8863"]
+Jul 22, 2015 2:31:16 PM org.apache.catalina.core.AprLifecycleListener init
+INFO: The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: /usr/java/packages/lib/amd64:/usr/lib64:/lib64:/lib:/usr/lib
+Jul 22, 2015 2:31:17 PM org.apache.tomcat.util.digester.SetPropertiesRule begin
+WARNING: [SetPropertiesRule]{Server/Service/Engine/Host} Setting property 'xmlValidation' to 'false' did not find a matching property.
+Jul 22, 2015 2:31:17 PM org.apache.tomcat.util.digester.SetPropertiesRule begin
+WARNING: [SetPropertiesRule]{Server/Service/Engine/Host} Setting property 'xmlNamespaceAware' to 'false' did not find a matching property.
+Jul 22, 2015 2:31:17 PM org.apache.tomcat.util.digester.SetPropertiesRule begin
+WARNING: [SetPropertiesRule]{Server/Service/Engine/Host/Context} Setting property 'debug' to '0' did not find a matching property.
+Jul 22, 2015 2:31:17 PM org.apache.coyote.AbstractProtocol init
+INFO: Initializing ProtocolHandler ["ajp-bio-8863"]
+Jul 22, 2015 2:31:17 PM org.apache.catalina.startup.Catalina load
+INFO: Initialization processed in 821 ms
+Jul 22, 2015 2:31:17 PM org.apache.catalina.core.StandardService startInternal
+INFO: Starting service Catalina
+Jul 22, 2015 2:31:17 PM org.apache.catalina.core.StandardEngine startInternal
+INFO: Starting Servlet Engine: Apache Tomcat/7.0.23
+Jul 22, 2015 2:31:17 PM org.apache.catalina.core.StandardContext resourcesStart
+SEVERE: Error starting static Resources
+java.lang.IllegalArgumentException: Document base /www/scholarshipcenter/www/WebContent does not exist or is not a readable directory
+	at org.apache.naming.resources.FileDirContext.setDocBase(FileDirContext.java:140)
+	at org.apache.catalina.core.StandardContext.resourcesStart(StandardContext.java:4880)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5060)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1525)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1515)
+	at java.util.concurrent.FutureTask$Sync.innerRun(FutureTask.java:334)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:166)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1110)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:603)
+	at java.lang.Thread.run(Thread.java:722)
+
+Jul 22, 2015 2:31:17 PM org.apache.catalina.core.StandardContext startInternal
+SEVERE: Error in resourceStart()
+Jul 22, 2015 2:31:17 PM org.apache.catalina.core.StandardContext startInternal
+SEVERE: Error getConfigured
+Jul 22, 2015 2:31:17 PM org.apache.catalina.core.StandardContext startInternal
+SEVERE: Context [] startup failed due to previous errors
+Jul 22, 2015 2:31:17 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory /www/scholarshipcenter.co.kr/tomcat/webapps/examples
+Jul 22, 2015 2:31:17 PM org.apache.catalina.core.ApplicationContext log
+INFO: ContextListener: contextInitialized()
+Jul 22, 2015 2:31:17 PM org.apache.catalina.core.ApplicationContext log
+INFO: SessionListener: contextInitialized()
+Jul 22, 2015 2:31:17 PM org.apache.catalina.core.ApplicationContext log
+INFO: ContextListener: attributeAdded('org.apache.jasper.compiler.TldLocationsCache', 'org.apache.jasper.compiler.TldLocationsCache@7a1caa1d')
+Jul 22, 2015 2:31:17 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory /www/scholarshipcenter.co.kr/tomcat/webapps/manager
+Jul 22, 2015 2:31:17 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory /www/scholarshipcenter.co.kr/tomcat/webapps/docs
+Jul 22, 2015 2:31:18 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory /www/scholarshipcenter.co.kr/tomcat/webapps/host-manager
+Jul 22, 2015 2:31:18 PM org.apache.coyote.AbstractProtocol start
+INFO: Starting ProtocolHandler ["ajp-bio-8863"]
+Jul 22, 2015 2:31:18 PM org.apache.catalina.connector.MapperListener findDefaultHost
+WARNING: Unknown default host [localhost] for connector [Connector[AJP/1.3-8863]]
+Jul 22, 2015 2:31:18 PM org.apache.catalina.startup.Catalina start
+INFO: Server startup in 754 ms
+Jul 22, 2015 2:31:55 PM org.apache.catalina.core.StandardServer await
+INFO: A valid shutdown command was received via the shutdown port. Stopping the Server instance.
+Jul 22, 2015 2:31:55 PM org.apache.coyote.AbstractProtocol pause
+INFO: Pausing ProtocolHandler ["ajp-bio-8863"]
+Jul 22, 2015 2:31:55 PM org.apache.catalina.core.StandardService stopInternal
+INFO: Stopping service Catalina
+Jul 22, 2015 2:31:55 PM org.apache.catalina.util.LifecycleBase stop
+INFO: The stop() method was called on component [StandardEngine[Catalina].StandardHost[scholarshipcenter.co.kr].StandardContext[]] after stop() had already been called. The second call will be ignored.
+Jul 22, 2015 2:31:55 PM org.apache.catalina.core.ApplicationContext log
+INFO: SessionListener: contextDestroyed()
+Jul 22, 2015 2:31:55 PM org.apache.catalina.core.ApplicationContext log
+INFO: ContextListener: contextDestroyed()
+Jul 22, 2015 2:31:55 PM org.apache.coyote.AbstractProtocol stop
+INFO: Stopping ProtocolHandler ["ajp-bio-8863"]
+Jul 22, 2015 2:31:55 PM org.apache.coyote.AbstractProtocol destroy
+INFO: Destroying ProtocolHandler ["ajp-bio-8863"]
+Jul 22, 2015 2:31:57 PM org.apache.catalina.core.AprLifecycleListener init
+INFO: The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: /usr/java/packages/lib/amd64:/usr/lib64:/lib64:/lib:/usr/lib
+Jul 22, 2015 2:31:57 PM org.apache.tomcat.util.digester.SetPropertiesRule begin
+WARNING: [SetPropertiesRule]{Server/Service/Engine/Host} Setting property 'xmlValidation' to 'false' did not find a matching property.
+Jul 22, 2015 2:31:57 PM org.apache.tomcat.util.digester.SetPropertiesRule begin
+WARNING: [SetPropertiesRule]{Server/Service/Engine/Host} Setting property 'xmlNamespaceAware' to 'false' did not find a matching property.
+Jul 22, 2015 2:31:57 PM org.apache.tomcat.util.digester.SetPropertiesRule begin
+WARNING: [SetPropertiesRule]{Server/Service/Engine/Host/Context} Setting property 'debug' to '0' did not find a matching property.
+Jul 22, 2015 2:31:57 PM org.apache.coyote.AbstractProtocol init
+INFO: Initializing ProtocolHandler ["ajp-bio-8863"]
+Jul 22, 2015 2:31:57 PM org.apache.catalina.startup.Catalina load
+INFO: Initialization processed in 849 ms
+Jul 22, 2015 2:31:57 PM org.apache.catalina.core.StandardService startInternal
+INFO: Starting service Catalina
+Jul 22, 2015 2:31:57 PM org.apache.catalina.core.StandardEngine startInternal
+INFO: Starting Servlet Engine: Apache Tomcat/7.0.23
+Jul 22, 2015 2:31:57 PM org.apache.catalina.core.StandardContext resourcesStart
+SEVERE: Error starting static Resources
+java.lang.IllegalArgumentException: Document base /www/scholarshipcenter/www/WebContent does not exist or is not a readable directory
+	at org.apache.naming.resources.FileDirContext.setDocBase(FileDirContext.java:140)
+	at org.apache.catalina.core.StandardContext.resourcesStart(StandardContext.java:4880)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5060)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1525)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1515)
+	at java.util.concurrent.FutureTask$Sync.innerRun(FutureTask.java:334)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:166)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1110)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:603)
+	at java.lang.Thread.run(Thread.java:722)
+
+Jul 22, 2015 2:31:57 PM org.apache.catalina.core.StandardContext startInternal
+SEVERE: Error in resourceStart()
+Jul 22, 2015 2:31:57 PM org.apache.catalina.core.StandardContext startInternal
+SEVERE: Error getConfigured
+Jul 22, 2015 2:31:57 PM org.apache.catalina.core.StandardContext startInternal
+SEVERE: Context [] startup failed due to previous errors
+Jul 22, 2015 2:31:57 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory /www/scholarshipcenter.co.kr/tomcat/webapps/examples
+Jul 22, 2015 2:31:58 PM org.apache.catalina.core.ApplicationContext log
+INFO: ContextListener: contextInitialized()
+Jul 22, 2015 2:31:58 PM org.apache.catalina.core.ApplicationContext log
+INFO: SessionListener: contextInitialized()
+Jul 22, 2015 2:31:58 PM org.apache.catalina.core.ApplicationContext log
+INFO: ContextListener: attributeAdded('org.apache.jasper.compiler.TldLocationsCache', 'org.apache.jasper.compiler.TldLocationsCache@7d4acb8')
+Jul 22, 2015 2:31:58 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory /www/scholarshipcenter.co.kr/tomcat/webapps/manager
+Jul 22, 2015 2:31:58 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory /www/scholarshipcenter.co.kr/tomcat/webapps/docs
+Jul 22, 2015 2:31:58 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory /www/scholarshipcenter.co.kr/tomcat/webapps/host-manager
+Jul 22, 2015 2:31:58 PM org.apache.coyote.AbstractProtocol start
+INFO: Starting ProtocolHandler ["ajp-bio-8863"]
+Jul 22, 2015 2:31:58 PM org.apache.catalina.connector.MapperListener findDefaultHost
+WARNING: Unknown default host [localhost] for connector [Connector[AJP/1.3-8863]]
+Jul 22, 2015 2:31:58 PM org.apache.catalina.startup.Catalina start
+INFO: Server startup in 685 ms
+Jul 22, 2015 2:32:46 PM org.apache.catalina.core.StandardServer await
+INFO: A valid shutdown command was received via the shutdown port. Stopping the Server instance.
+Jul 22, 2015 2:32:46 PM org.apache.coyote.AbstractProtocol pause
+INFO: Pausing ProtocolHandler ["ajp-bio-8863"]
+Jul 22, 2015 2:32:47 PM org.apache.catalina.core.StandardService stopInternal
+INFO: Stopping service Catalina
+Jul 22, 2015 2:32:47 PM org.apache.catalina.util.LifecycleBase stop
+INFO: The stop() method was called on component [StandardEngine[Catalina].StandardHost[scholarshipcenter.co.kr].StandardContext[]] after stop() had already been called. The second call will be ignored.
+Jul 22, 2015 2:32:47 PM org.apache.catalina.core.ApplicationContext log
+INFO: SessionListener: contextDestroyed()
+Jul 22, 2015 2:32:47 PM org.apache.catalina.core.ApplicationContext log
+INFO: ContextListener: contextDestroyed()
+Jul 22, 2015 2:32:47 PM org.apache.coyote.AbstractProtocol stop
+INFO: Stopping ProtocolHandler ["ajp-bio-8863"]
+Jul 22, 2015 2:32:47 PM org.apache.coyote.AbstractProtocol destroy
+INFO: Destroying ProtocolHandler ["ajp-bio-8863"]
+Jul 22, 2015 2:32:48 PM org.apache.catalina.core.AprLifecycleListener init
+INFO: The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: /usr/java/packages/lib/amd64:/usr/lib64:/lib64:/lib:/usr/lib
+Jul 22, 2015 2:32:48 PM org.apache.tomcat.util.digester.SetPropertiesRule begin
+WARNING: [SetPropertiesRule]{Server/Service/Engine/Host} Setting property 'xmlValidation' to 'false' did not find a matching property.
+Jul 22, 2015 2:32:48 PM org.apache.tomcat.util.digester.SetPropertiesRule begin
+WARNING: [SetPropertiesRule]{Server/Service/Engine/Host} Setting property 'xmlNamespaceAware' to 'false' did not find a matching property.
+Jul 22, 2015 2:32:48 PM org.apache.tomcat.util.digester.SetPropertiesRule begin
+WARNING: [SetPropertiesRule]{Server/Service/Engine/Host/Context} Setting property 'debug' to '0' did not find a matching property.
+Jul 22, 2015 2:32:49 PM org.apache.coyote.AbstractProtocol init
+INFO: Initializing ProtocolHandler ["ajp-bio-8863"]
+Jul 22, 2015 2:32:49 PM org.apache.catalina.startup.Catalina load
+INFO: Initialization processed in 847 ms
+Jul 22, 2015 2:32:49 PM org.apache.catalina.core.StandardService startInternal
+INFO: Starting service Catalina
+Jul 22, 2015 2:32:49 PM org.apache.catalina.core.StandardEngine startInternal
+INFO: Starting Servlet Engine: Apache Tomcat/7.0.23
+Jul 22, 2015 2:32:50 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory /www/scholarshipcenter.co.kr/tomcat/webapps/examples
+Jul 22, 2015 2:32:50 PM org.apache.catalina.core.ApplicationContext log
+INFO: ContextListener: contextInitialized()
+Jul 22, 2015 2:32:50 PM org.apache.catalina.core.ApplicationContext log
+INFO: SessionListener: contextInitialized()
+Jul 22, 2015 2:32:50 PM org.apache.catalina.core.ApplicationContext log
+INFO: ContextListener: attributeAdded('org.apache.jasper.compiler.TldLocationsCache', 'org.apache.jasper.compiler.TldLocationsCache@42845bde')
+Jul 22, 2015 2:32:50 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory /www/scholarshipcenter.co.kr/tomcat/webapps/manager
+Jul 22, 2015 2:32:50 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory /www/scholarshipcenter.co.kr/tomcat/webapps/docs
+Jul 22, 2015 2:32:50 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory /www/scholarshipcenter.co.kr/tomcat/webapps/host-manager
+Jul 22, 2015 2:32:50 PM org.apache.coyote.AbstractProtocol start
+INFO: Starting ProtocolHandler ["ajp-bio-8863"]
+Jul 22, 2015 2:32:50 PM org.apache.catalina.connector.MapperListener findDefaultHost
+WARNING: Unknown default host [localhost] for connector [Connector[AJP/1.3-8863]]
+Jul 22, 2015 2:32:50 PM org.apache.catalina.startup.Catalina start
+INFO: Server startup in 1374 ms

@@ -1,0 +1,52 @@
+May 23, 2015 12:19:33 AM org.apache.catalina.core.StandardServer await
+INFO: A valid shutdown command was received via the shutdown port. Stopping the Server instance.
+May 23, 2015 12:19:33 AM org.apache.coyote.AbstractProtocol pause
+INFO: Pausing ProtocolHandler ["ajp-bio-8863"]
+May 23, 2015 12:19:33 AM org.apache.catalina.core.StandardService stopInternal
+INFO: Stopping service Catalina
+May 23, 2015 12:19:33 AM org.apache.catalina.core.ApplicationContext log
+INFO: SessionListener: contextDestroyed()
+May 23, 2015 12:19:33 AM org.apache.catalina.core.ApplicationContext log
+INFO: ContextListener: contextDestroyed()
+May 23, 2015 12:19:33 AM org.apache.coyote.AbstractProtocol stop
+INFO: Stopping ProtocolHandler ["ajp-bio-8863"]
+May 23, 2015 12:19:33 AM org.apache.coyote.AbstractProtocol destroy
+INFO: Destroying ProtocolHandler ["ajp-bio-8863"]
+May 23, 2015 1:47:38 AM org.apache.catalina.core.AprLifecycleListener init
+INFO: The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: /usr/java/packages/lib/amd64:/usr/lib64:/lib64:/lib:/usr/lib
+May 23, 2015 1:47:39 AM org.apache.tomcat.util.digester.SetPropertiesRule begin
+WARNING: [SetPropertiesRule]{Server/Service/Engine/Host} Setting property 'xmlValidation' to 'false' did not find a matching property.
+May 23, 2015 1:47:39 AM org.apache.tomcat.util.digester.SetPropertiesRule begin
+WARNING: [SetPropertiesRule]{Server/Service/Engine/Host} Setting property 'xmlNamespaceAware' to 'false' did not find a matching property.
+May 23, 2015 1:47:40 AM org.apache.tomcat.util.digester.SetPropertiesRule begin
+WARNING: [SetPropertiesRule]{Server/Service/Engine/Host/Context} Setting property 'debug' to '0' did not find a matching property.
+May 23, 2015 1:47:43 AM org.apache.coyote.AbstractProtocol init
+INFO: Initializing ProtocolHandler ["ajp-bio-8863"]
+May 23, 2015 1:47:44 AM org.apache.catalina.startup.Catalina load
+INFO: Initialization processed in 13257 ms
+May 23, 2015 1:47:44 AM org.apache.catalina.core.StandardService startInternal
+INFO: Starting service Catalina
+May 23, 2015 1:47:45 AM org.apache.catalina.core.StandardEngine startInternal
+INFO: Starting Servlet Engine: Apache Tomcat/7.0.23
+May 23, 2015 1:48:00 AM org.apache.catalina.util.SessionIdGenerator createSecureRandom
+INFO: Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [157] milliseconds.
+May 23, 2015 1:48:01 AM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory /www/scholarshipcenter.co.kr/tomcat/webapps/examples
+May 23, 2015 1:48:04 AM org.apache.catalina.core.ApplicationContext log
+INFO: ContextListener: contextInitialized()
+May 23, 2015 1:48:04 AM org.apache.catalina.core.ApplicationContext log
+INFO: SessionListener: contextInitialized()
+May 23, 2015 1:48:04 AM org.apache.catalina.core.ApplicationContext log
+INFO: ContextListener: attributeAdded('org.apache.jasper.compiler.TldLocationsCache', 'org.apache.jasper.compiler.TldLocationsCache@1d00c794')
+May 23, 2015 1:48:04 AM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory /www/scholarshipcenter.co.kr/tomcat/webapps/manager
+May 23, 2015 1:48:05 AM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory /www/scholarshipcenter.co.kr/tomcat/webapps/docs
+May 23, 2015 1:48:05 AM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory /www/scholarshipcenter.co.kr/tomcat/webapps/host-manager
+May 23, 2015 1:48:06 AM org.apache.coyote.AbstractProtocol start
+INFO: Starting ProtocolHandler ["ajp-bio-8863"]
+May 23, 2015 1:48:06 AM org.apache.catalina.connector.MapperListener findDefaultHost
+WARNING: Unknown default host [localhost] for connector [Connector[AJP/1.3-8863]]
+May 23, 2015 1:48:06 AM org.apache.catalina.startup.Catalina start
+INFO: Server startup in 22216 ms

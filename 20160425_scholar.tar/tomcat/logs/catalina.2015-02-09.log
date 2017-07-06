@@ -1,0 +1,26 @@
+Feb 09, 2015 5:51:19 PM org.apache.catalina.core.AprLifecycleListener init
+INFO: The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: /usr/java/packages/lib/amd64:/usr/lib64:/lib64:/lib:/usr/lib
+Feb 09, 2015 5:51:20 PM org.apache.tomcat.util.digester.SetPropertiesRule begin
+WARNING: [SetPropertiesRule]{Server/Service/Engine/Host} Setting property 'xmlValidation' to 'false' did not find a matching property.
+Feb 09, 2015 5:51:20 PM org.apache.tomcat.util.digester.SetPropertiesRule begin
+WARNING: [SetPropertiesRule]{Server/Service/Engine/Host} Setting property 'xmlNamespaceAware' to 'false' did not find a matching property.
+Feb 09, 2015 5:51:20 PM org.apache.tomcat.util.digester.SetPropertiesRule begin
+WARNING: [SetPropertiesRule]{Server/Service/Engine/Host/Context} Setting property 'debug' to '0' did not find a matching property.
+Feb 09, 2015 5:51:20 PM org.apache.coyote.AbstractProtocol init
+INFO: Initializing ProtocolHandler ["ajp-bio-8863"]
+Feb 09, 2015 5:51:20 PM org.apache.catalina.startup.Catalina load
+INFO: Initialization processed in 1637 ms
+Feb 09, 2015 5:51:20 PM org.apache.catalina.core.StandardService startInternal
+INFO: Starting service Catalina
+Feb 09, 2015 5:51:20 PM org.apache.catalina.core.StandardEngine startInternal
+INFO: Starting Servlet Engine: Apache Tomcat/7.0.23
+Feb 09, 2015 5:51:21 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory /www/scholarshipcenter.co.kr/www
+Feb 09, 2015 5:51:21 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory /www/scholarshipcenter.co.kr/tomcat
+Feb 09, 2015 5:51:21 PM org.apache.coyote.AbstractProtocol start
+INFO: Starting ProtocolHandler ["ajp-bio-8863"]
+Feb 09, 2015 5:51:21 PM org.apache.catalina.connector.MapperListener findDefaultHost
+WARNING: Unknown default host [localhost] for connector [Connector[AJP/1.3-8863]]
+Feb 09, 2015 5:51:21 PM org.apache.catalina.startup.Catalina start
+INFO: Server startup in 1110 ms

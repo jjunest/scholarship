@@ -1,0 +1,48 @@
+Aug 15, 2015 5:13:29 PM org.apache.catalina.core.StandardContext reload
+INFO: Reloading Context with name [] has started
+Aug 15, 2015 5:13:30 PM org.apache.catalina.core.StandardContext reload
+INFO: Reloading Context with name [] is completed
+Aug 15, 2015 5:26:10 PM org.apache.catalina.core.StandardContext reload
+INFO: Reloading Context with name [] has started
+Aug 15, 2015 5:26:10 PM org.apache.catalina.core.StandardContext reload
+INFO: Reloading Context with name [] is completed
+Aug 15, 2015 5:29:30 PM org.apache.catalina.core.StandardContext reload
+INFO: Reloading Context with name [] has started
+Aug 15, 2015 5:29:31 PM org.apache.catalina.startup.ContextConfig processAnnotationsJndi
+SEVERE: Unable to process resource element [jndi:/scholarshipcenter.co.kr/WEB-INF/classes/crawler/Crawler_School_HanYang.class] for annotations
+java.io.EOFException
+	at java.io.DataInputStream.readFully(DataInputStream.java:197)
+	at java.io.DataInputStream.readFully(DataInputStream.java:169)
+	at org.apache.tomcat.util.bcel.classfile.Code.<init>(Code.java:71)
+	at org.apache.tomcat.util.bcel.classfile.Attribute.readAttribute(Attribute.java:140)
+	at org.apache.tomcat.util.bcel.classfile.FieldOrMethod.<init>(FieldOrMethod.java:58)
+	at org.apache.tomcat.util.bcel.classfile.Method.<init>(Method.java:72)
+	at org.apache.tomcat.util.bcel.classfile.ClassParser.readMethods(ClassParser.java:268)
+	at org.apache.tomcat.util.bcel.classfile.ClassParser.parse(ClassParser.java:128)
+	at org.apache.catalina.startup.ContextConfig.processAnnotationsStream(ContextConfig.java:1949)
+	at org.apache.catalina.startup.ContextConfig.processAnnotationsJndi(ContextConfig.java:1896)
+	at org.apache.catalina.startup.ContextConfig.processAnnotationsJndi(ContextConfig.java:1887)
+	at org.apache.catalina.startup.ContextConfig.processAnnotationsJndi(ContextConfig.java:1887)
+	at org.apache.catalina.startup.ContextConfig.processAnnotationsUrl(ContextConfig.java:1810)
+	at org.apache.catalina.startup.ContextConfig.webConfig(ContextConfig.java:1203)
+	at org.apache.catalina.startup.ContextConfig.configureStart(ContextConfig.java:828)
+	at org.apache.catalina.startup.ContextConfig.lifecycleEvent(ContextConfig.java:302)
+	at org.apache.catalina.util.LifecycleSupport.fireLifecycleEvent(LifecycleSupport.java:119)
+	at org.apache.catalina.util.LifecycleBase.fireLifecycleEvent(LifecycleBase.java:90)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5148)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+	at org.apache.catalina.core.StandardContext.reload(StandardContext.java:3894)
+	at org.apache.catalina.loader.WebappLoader.backgroundProcess(WebappLoader.java:424)
+	at org.apache.catalina.core.ContainerBase.backgroundProcess(ContainerBase.java:1310)
+	at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.processChildren(ContainerBase.java:1496)
+	at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.processChildren(ContainerBase.java:1506)
+	at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.processChildren(ContainerBase.java:1506)
+	at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.run(ContainerBase.java:1485)
+	at java.lang.Thread.run(Thread.java:722)
+
+Aug 15, 2015 5:29:31 PM org.apache.catalina.core.StandardContext reload
+INFO: Reloading Context with name [] is completed
+Aug 15, 2015 5:33:41 PM org.apache.catalina.core.StandardContext reload
+INFO: Reloading Context with name [] has started
+Aug 15, 2015 5:33:41 PM org.apache.catalina.core.StandardContext reload
+INFO: Reloading Context with name [] is completed

@@ -1,0 +1,15 @@
+@CHARSET "UTF-8";
+
+#topMenu{position:relative;background:#313131;height:40px;overflow:hidden}
+#scroller{margin:0 26px;position:absolute;white-space:nowrap}
+#topMenu li{display:inline-block;text-align:center}
+#topMenu li a{display:inline-block;min-width:75px;height:28px;padding:0 5px;color:#ccc;font-size:.929em;font-weight:bold;letter-spacing:-1px;line-height:28px;margin:5px -1px -1px -1px}
+#topMenu li a.on{background:#0096e4;border:#000 solid 1px;color:#fff;border-radius:4px}
+
+.scroller-arr-left,.scroller-arr-right{
+	position:absolute;
+	display:none;left:0;top:0;width:26px;height:40px;
+	background:url(/WebContent/images/button.png) 0px 0 no-repeat;
+	background-size:auto 85px;text-indent:-999em}
+.scroller-arr-left.active,.scroller-arr-right.active{display:block}
+.scroller-arr-right{right:0;left:auto;background-position:0px -45px}

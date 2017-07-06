@@ -1,0 +1,12 @@
+Feb 23, 2015 12:18:53 PM org.apache.catalina.core.StandardContext reload
+INFO: Reloading Context with name [] has started
+Feb 23, 2015 12:18:54 PM org.apache.catalina.core.StandardContext reload
+INFO: Reloading Context with name [] is completed
+Feb 23, 2015 12:21:54 PM org.apache.catalina.core.StandardContext reload
+INFO: Reloading Context with name [] has started
+Feb 23, 2015 12:21:57 PM org.apache.catalina.core.StandardContext reload
+INFO: Reloading Context with name [] is completed
+Feb 23, 2015 3:30:49 PM org.apache.catalina.core.StandardContext reload
+INFO: Reloading Context with name [] has started
+Feb 23, 2015 3:30:49 PM org.apache.catalina.core.StandardContext reload
+INFO: Reloading Context with name [] is completed

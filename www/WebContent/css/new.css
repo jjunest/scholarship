@@ -1,0 +1,22 @@
+@import url("/WebContent/css/common.css");
+
+#main {overflow:hidden; margin-top:140px;}
+
+#main .splash-w {width:100%; background:#e7e3e0; overflow:hidden;}
+#main .splash {position:relative; margin:0 auto; text-align:center; overflow:hidden;}
+
+.slidesjs-pagination li .active {background:url("/WebContent/images/on-slides.png") no-repeat 0 0 !important;}
+.slidesjs-pagination li a {background:url("/WebContent/images/off-slides.png") no-repeat 0 0 !important;}
+
+#main .about-w .on {
+	transform : translate(0, -320px);
+	transition : transform 0.5s;
+}
+#main .about-w .off {
+	transform : translate(0, 0px);
+	transition : transform 0.5s
+}
+#main .on .text .but img {
+	transform : rotate(180deg);
+	transition : transform 0.1s
+}
